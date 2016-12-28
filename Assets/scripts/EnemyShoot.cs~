@@ -1,0 +1,30 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class EnemyShoot : MonoBehaviour {
+
+	public GameObject player;
+	public GameObject bullet;
+
+	//vars
+	private float playerX,playerY,bulletX,bulletY;
+
+	// Use this for initialization
+	void Start () {
+		processCoordinates();
+	
+	}
+	
+	// Update is called once per frame
+	void Update () {
+		
+	}
+
+	private void processCoordinates()
+	{
+		playerX=player.transform.position.x;
+		playerY=player.transform.position.y;
+		bulletX=bullet.transform.position.x;
+		bulletY=bullet.transform.position.y;
+	}
+}
